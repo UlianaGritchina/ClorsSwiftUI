@@ -33,13 +33,13 @@ struct ContentView: View {
                     Button("Done") {
                         UIApplication.shared.endEditing()
                         if !redTextValue.isEmpty {
-                            red = (Double(redTextValue) ?? 1) / 255
+                            red = (Double(redTextValue) ?? 255) / 255
                         }
                         if !greenTextValue.isEmpty {
-                            green = (Double(greenTextValue) ?? 1) / 255
+                            green = (Double(greenTextValue) ?? 255) / 255
                         }
                         if !blueTextValue.isEmpty {
-                        blue = (Double(blueTextValue) ?? 1) / 255
+                        blue = (Double(blueTextValue) ?? 255) / 255
                         }
                     }
                 }
